@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Desktop.ini
+*.lnk
+
+# Misc
+*.log
+.env

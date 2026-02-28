@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas de Bailliencourt — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Lucas.dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#education" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Supinfo — Ingénieur Informatique · Recherche d'alternance</span>
+            </div>
+            <h1 class="hero-title fade-in">
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <span class="hero-name">Lucas de Bailliencourt</span>
+                <span class="hero-role">
+                    <span id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </span>
+            </h1>
+            <p class="hero-description fade-in">
+                Étudiant en ingénierie informatique à Supinfo, je recherche une <strong>alternance de 2 ans</strong>.
+                Sérieux, rigoureux et adaptable, je développe des applications web avec React, Vue.js et Python.
+            </p>
+            <div class="hero-cta fade-in">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Voir mes projets
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Me contacter
+                </a>
+            </div>
+            <div class="hero-socials fade-in">
+                <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-de-bailliencourt/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:lucas.debailliencourt.pro@gmail.com?subject=Contact%20via%20Portfolio" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+33785660627" class="social-link" aria-label="Téléphone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">01.</span>
+                À propos de moi
+            </h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <p>
+                        Étudiant sérieux et impliqué en <strong>ingénierie informatique à Supinfo</strong>, 
+                        je sais faire preuve de rigueur, d'adaptabilité et d'un bon esprit d'analyse. 
+                        Doté d'une forte motivation, je m'investis pleinement dans les projets qui me sont confiés.
+                    </p>
+                    <p>
+                        Mon parcours m'a permis d'acquérir de l'expérience en <strong>développement front-end 
+                        (React, Vue.js)</strong> et <strong>back-end (Python, Java, PHP)</strong>, notamment lors 
+                        de mon stage chez PromoAssurances et de mon projet majeur de 200 jours.
+                    </p>
+                    <p>
+                        En dehors du code, je suis passionné par la <strong>culture japonaise</strong>, le tennis 
+                        et les voyages. Je suis membre actif du <strong>BDE Supinfo</strong>. Je recherche 
+                        actuellement une <strong>alternance de 2 ans</strong> pour poursuivre ma formation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Langages maîtrisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="200">0</span>
+                            <span class="stat-label">Jours de projet majeur</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number no-plus" data-count="2">0</span>
+                            <span class="stat-label">Stages réalisés</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <div class="image-wrapper">
+                        <img src="img/photo-lucas.jpg" alt="Lucas de Bailliencourt" class="profile-photo">
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Caen / Rouen, France</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-university"></i>
+                            <span>Supinfo — Ingénieur Info</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Recherche d'alternance (2 ans)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-car"></i>
+                            <span>Permis B</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-language"></i>
+                            <span>Français / Anglais B2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">02.</span>
+                Compétences
+            </h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Base de données -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Base de données</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Outils & Design</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Langues -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Langues</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Français — Natif</span>
+                        <span class="skill-tag">Anglais — Niveau B2</span>
+                    </div>
+                </div>
+
+                <!-- Soft skills -->
+                <div class="skill-card fade-in" data-tilt>
+                    <div class="skill-card-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Rigueur</span>
+                        <span class="skill-tag">Adaptabilité</span>
+                        <span class="skill-tag">Esprit d'analyse</span>
+                        <span class="skill-tag">Travail d'équipe</span>
+                        <span class="skill-tag">Motivation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">03.</span>
+                Projets
+            </h2>
+            <div class="projects-grid">
+                <!-- Biblly -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.biblly.fr" target="_blank" class="project-link" aria-label="Voir le site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Projet Majeur — 200 jours</span>
+                        <h3 class="project-title">Biblly</h3>
+                        <p class="project-description">
+                            Projet de grande envergure réalisé sur 200 jours dans le cadre 
+                            de la formation Supinfo. Développement complet d'une application 
+                            web full-stack en équipe.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SupCity -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://leam-enterprise.itch.io/supcity" target="_blank" class="project-link" aria-label="Jouer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Jeu Vidéo</span>
+                        <h3 class="project-title">SupCity</h3>
+                        <p class="project-description">
+                            Jeu vidéo développé dans le cadre d'un projet Supinfo. 
+                            Disponible sur itch.io. Conception, développement 
+                            et publication en équipe.
+                        </p>
+                        <div class="project-tech">
+                            <span>Game Dev</span>
+                            <span>Teamwork</span>
+                            <span>itch.io</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Stage PromoAssurances -->
+                <article class="project-card fade-in project-card--no-link">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Stage — PromoAssurances</span>
+                        <h3 class="project-title">Application Web PromoAssurances</h3>
+                        <p class="project-description">
+                            Développement front-end en React et back-end en Python 
+                            au sein d'une équipe de 5 personnes. Stage de 2 mois 
+                            en entreprise.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Travail d'équipe</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Migration Windows -->
+                <article class="project-card fade-in project-card--no-link">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Stage — Seine-Maritime</span>
+                        <h3 class="project-title">Migration Windows 11</h3>
+                        <p class="project-description">
+                            Assistance à la migration vers Windows 11 au sein d'une 
+                            équipe de 30 personnes. Rédaction de documentations techniques 
+                            et support utilisateur.
+                        </p>
+                        <div class="project-tech">
+                            <span>Windows 11</span>
+                            <span>Documentation</span>
+                            <span>Support IT</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" id="portfolio-github-link" class="project-link" aria-label="Code source (bientôt)">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Projet Personnel</span>
+                        <h3 class="project-title">Portfolio Personnel</h3>
+                        <p class="project-description">
+                            Ce portfolio que vous consultez actuellement ! Développé 
+                            en HTML5, CSS3 et JavaScript vanilla avec des animations 
+                            modernes et un design responsive.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">04.</span>
+                Parcours & Expériences
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">En cours</span>
+                        <h3>Ingénieur Informatique — Supinfo</h3>
+                        <p>
+                            Formation complète en ingénierie informatique : développement web,
+                            bases de données, réseaux, cybersécurité et gestion de projet.
+                            Membre actif du BDE Supinfo.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Développement Web</span>
+                            <span>Bases de données</span>
+                            <span>Projet majeur 200 jours</span>
+                            <span>BDE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 — Stage (2 mois)</span>
+                        <h3>Développeur Web — PromoAssurances</h3>
+                        <p>
+                            Développement front-end en React et back-end en Python. 
+                            Travail au sein d'une équipe de 5 personnes sur une application 
+                            métier dans le domaine de l'assurance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Équipe de 5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 — Stage de fin d'année</span>
+                        <h3>Technicien IT — Département Seine-Maritime</h3>
+                        <p>
+                            Assistance à la migration vers Windows 11. Rédaction de 
+                            documentations techniques. Travail en équipe de 30 personnes 
+                            dans un environnement de grande organisation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Windows 11</span>
+                            <span>Documentation</span>
+                            <span>Équipe de 30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Expériences professionnelles</span>
+                        <h3>Employé polyvalent</h3>
+                        <p>
+                            CHU de Bois-Guillaume — Service restauration (6 mois cumulés, 3×2 mois).
+                            E. Leclerc Neufchâtel-en-Bray — Employé de supermarché (2 mois). 
+                            Ces expériences m'ont apporté rigueur, sens du service et esprit d'équipe.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Polyvalence</span>
+                            <span>Sens du service</span>
+                            <span>Rigueur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="section-number">05.</span>
+                Contact
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Travaillons ensemble</h3>
+                    <p>
+                        Je suis actuellement à la recherche d'une <strong>alternance de 2 ans</strong> 
+                        en informatique. N'hésitez pas à me contacter 
+                        pour discuter d'opportunités !
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:lucas.debailliencourt.pro@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">lucas.debailliencourt.pro@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+33785660627" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Téléphone</span>
+                                <span class="contact-method-value">07 85 66 06 27</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucas-de-bailliencourt/" target="_blank" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">LinkedIn</span>
+                                <span class="contact-method-value">linkedin.com/in/lucas-de-bailliencourt</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mkoveajk" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Lucas.dev</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-de-bailliencourt/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:lucas.debailliencourt.pro@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">
+                    Conçu & développé par <strong>Lucas de Bailliencourt</strong> — 2026
+                </p>
+                <p class="footer-credit">
+                    Fait avec <i class="fas fa-heart"></i> et beaucoup de <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
